@@ -3,6 +3,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Container from 'react-bootstrap/Container';
 import logo from "../../assets/images/logo/logo.png";
+/*--  import the sytles css of navbar--*/
 import "./navbar.css"
 
 function Bar() {
@@ -15,7 +16,6 @@ function Bar() {
         <img src={logo} alt="" style={{ paddingRight:"50px", paddingLeft:"50px"}}/>
         
 
-        {/* <Navbar.Brand href="#">Navbar scroll</Navbar.Brand> */}
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           
@@ -25,7 +25,7 @@ function Bar() {
           >  
              <Nav.Link href="#action1" className='nav'> Noter</Nav.Link>
            
-            <Nav.Link href="#action2" className='navlink'>Audit RSE </Nav.Link>
+            <Nav.Link href="#action2" className='navlink' style={{color:"#E86161"}}>Audit RSE </Nav.Link>
             <Nav.Link href="#action3"  className='nav' > Devenir pro</Nav.Link>
             <Nav.Link href="#action6"  className='nav'> Contact</Nav.Link>
              <NavDropdown title="Fr" id="navbarScrollingDropdown" className='lang'>
@@ -34,7 +34,7 @@ function Bar() {
               <NavDropdown.Item href="#action4"> French   </NavDropdown.Item>
           
             </NavDropdown>
-            <Nav.Link href="#action7" className='nav'>Connexion</Nav.Link> 
+            <Nav.Link href="#action7" style={{color :"#123653",}}>Connexion</Nav.Link> 
 
           </Nav>
            <Nav.Link href="#action8" className='inscription'>Inscription</Nav.Link>

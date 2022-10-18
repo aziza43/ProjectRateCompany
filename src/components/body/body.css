@@ -1,4 +1,4 @@
-.aziza{
+.backimg{
     height: 800px;
     opacity: 1;
     background-size: cover;
@@ -45,6 +45,15 @@ top: 260px;
 left: 215px;
 width: 151px;
 height: 27px;
+}
+
+.lancer{
+ top: 477px;
+ left: 215px; 
+font: normal normal bold 18px/30px Heebo;
+letter-spacing: 0px;
+color: #FFFFFF;
+text-transform: uppercase;
 }
 img{
     padding-right: 100px;
