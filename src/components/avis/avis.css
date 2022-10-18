@@ -1,6 +1,5 @@
 .avis-container {
     background-color: #f6f9fc;
-    margin: 20px 20px;
     width: 100%;
   }
 h3{
@@ -17,10 +16,33 @@ letter-spacing: 0px;
 color: #6F7B84;
 opacity: 1;
 }
-.Row{
-padding-right: 30px;
+.card-space-between{
+  margin: 20px 20px;
 
 }
-.card-space-between{
-  margin-left: 50px;
+.card-stars{
+  position: relative;
+  display: flex;
+	max-width: 70px;
+  padding-right: 10px;
 }
+ .line{
+  border-bottom: 1px solid #e2e2e2;
+ }
+ .titel-text{
+  text-align: left;
+  font: normal normal medium 14px/18px Heebo;
+  letter-spacing: 0px;
+  color: #1B1B21;
+  opacity: 1;
+  size: 14px;
+ }
+ .parag{
+  text-align: left;
+  font: normal normal normal 14px/20px Heebo;
+  letter-spacing: 0px;
+  color: #373737;
+  opacity: 1;
+  width: 358px;
+  size: 14px;
+ }

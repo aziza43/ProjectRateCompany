@@ -8,32 +8,33 @@ export default function SocialFlow() {
   return (
     <div style={{
       position:'relative',
-        top: 560,
+      display: 'inline-block',
+
         left: 55,
   }} >
       
       <p className="social-container">
         <a
           href="#"
-          className="linkedin social"
+          className=" social"
         >
           <img src={faLinkedin}/>
         </a>
         <a
           href="#"
-          className="twitter social"
+          className=" social"
         >
           <img src={faTwitter}/>
         </a>
         <a
           href="#"
-          className="facebook social"
+          className=" social"
         >
           
           <img src={faFacebook}/>
 
         </a>
-        <a href="#" className="youtube social">
+        <a href="#" className=" social">
      
           <img src={faYoutube}/>
 

@@ -3,42 +3,57 @@ import "./avis.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import imgSlider1 from "../../assets/images/viza.png"
+
 import {Col,Row, Card } from "reactstrap";
 import StarRed from "../../assets/images/svg/star-selected.svg";
 import Star from "../../assets/images/svg/star-not-selected.svg";
+import user1 from "../../assets/images/user-img-1.png";
 
 const Avis = () => {
+  const number =[1, 2, 3, 4];
+  const str1 ='../../assets/images/slider'
+  const str2='.png';
     const renderSlides = () =>
-    [1, 2, 3, 4].map(num => (
-      <Card >
-        <Row className="card-space-between">
+    number.map(num => (
+      <Card key={num.toString()} >
+        <Row className="card-space-between line">
           <Col>
-          <img src={imgSlider1} alt ="" />
+          <img src={'../../assets/images/slider1.png'} alt ="" />
 
           </Col>
           <Col>
-          <b>Geiq ADI Alpin</b>
+          <b>Geiq ADI Alpin {num}</b>
           <p>ZA - 124 rue de la Prairie, 73420, VOGLANS, France</p>
           </Col><br/><br/>
         </Row>
         <Row className="card-space-between">
-          <Col>
-          <img src={StarRed} />
-          </Col>
-          <Col>
-          <img src={StarRed} alt ="" />
-          </Col>
-          <Col>
-          <img src={StarRed}  alt =""/>
-          </Col>
-          <Col>
-          <img src={Star} alt ="" />
-          </Col>
-          <Col>
-          <img src={Star}  alt =""/>
+          <Col className="card-stars">
+          <img src={StarRed} style={{padding : '10px 2px' }} />         
+          <img src={StarRed} style={{padding : '10px 2px'}} />     
+          <img src={StarRed}  style={{padding : '10px 2px'}}/>          
+          <img src={Star} style={{ padding : '10px 2px' }} />         
+          <img src={Star} style={{padding : '10px 2px'}}/><br/>
+          <b style={{padding : '10px 10px' }}>3.5</b>
 
           </Col>
+         
+         <br/><br/>
+        </Row>
+        <Row  className="card-space-between line">
+         
+          <b className="titel-text">Contributed in the lorem ipsum</b><br/><br/>
+          <p className="parag">J'ai été très déçu, suite aux événements et échanges avec certaines personnes, j'ai été prise par le geiq. Mais..</p>
+
+        
+         
+         <br/><br/>
+        </Row>
+        <Row  className="card-space-between">
+        <Col className="card-stars">
+        <img src={user1} style={{padding : '10px 10px' }} />
+        <p style={{padding : '10px 10px' }}> <br/>User#1454182</p>
+        </Col>
+         
          <br/><br/>
         </Row>
       </Card>

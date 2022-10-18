@@ -23,7 +23,7 @@ return (
         <br/>
 		<Row>
         <Column>
-			<img src={imgFooter} width={250}  
+			<img src={imgFooter}width={250}  
             style={{
                 position: 'absolute',
                 left: 80,
